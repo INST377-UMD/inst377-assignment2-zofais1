@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html">
+<head>
+    <meta>
+    <title>Dogs - Class Activities</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-slider@1.0.0/simple-slider.min.js"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="stocks.html">Stocks</a></li>
+            <li><a href="dogs.html">Dogs</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Dog Breeds Gallery</h1>
+        
+        <div class="dog-carousel">
+            <div id="slider"></div>
+        </div>
+
+        <div class="breed-buttons" id="breed-buttons">
+        </div>
+
+        <div class="breed-info" id="breed-info" style="display: none;">
+            <h2 id="breed-name"></h2>
+            <p id="breed-description"></p>
+            <p>Life Span: <span id="breed-life-span"></span></p>
+        </div>
+    </main>
+
+    <div class="audio-controls">
+        <h3>Voice Commands</h3>
+        <p>Try saying:</p>
+        <ul>
+            <li>"Hello" - Shows a greeting</li>
+            <li>"Change the color to [color]" - Changes background color</li>
+            <li>"Navigate to [page]" - Navigates to specified page</li>
+            <li>"Load dog breed [breed name]" - Loads information about the specified breed</li>
+        </ul>
+        <button id="audio-on" class="audio-button">Turn On Audio</button>
+        <button id="audio-off" class="audio-button">Turn Off Audio</button>
+    </div>
+
+    <script src="js/audio.js"></script>
+    <script src="js/dogs.js"></script>
+</body>
+</html> 
